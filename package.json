@@ -1,10 +1,9 @@
 {
-  "name": "hotel-miranda",
+  "name": "hotel-miranda-php",
   "version": "1.0.0",
-  "description": "Web Hotel Miranda",
+  "description": "Web Hotel Miranda, refactored code from html to php",
   "main": "index.js",
   "scripts": {
-    "deploy": "gh-pages -d .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Agustin Alonso Cantoli",
