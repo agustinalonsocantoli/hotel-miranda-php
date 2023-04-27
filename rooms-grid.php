@@ -1,5 +1,8 @@
 <?php
 include './config.php';
-include './getData.php';
+include './db/db.php';
 
-echo $blade->run("rooms-grid", ["rooms" => getData()]);
+$sql = "SELECT * FROM rooms";
+$result = $conn->query($sql);
+
+echo $blade->run("rooms-grid", ["rooms" => $result->fetch_all(MYSQLI_ASSOC)]);
